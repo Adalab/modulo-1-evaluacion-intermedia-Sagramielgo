@@ -51,10 +51,13 @@
   text-transform: capitalize;
   font-size: 30px;
 }
-/* @media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .navContainer {
     flex-direction: row;
+    margin: 20px 30px;
     justify-content: space-between;
   }
+  .titleItem {
+    font-size: 40px;
+  }
 }
- */
