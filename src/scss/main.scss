@@ -1,8 +1,68 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import "core/variables";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  padding-top: 10px;
+}
+.menu {
+  display: flex;
+  color: #4a4a4a;
+  list-style: none;
+}
+
+.menuItem {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 10px 13px 10px;
+}
+.linkItem {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3cdbc0;
+}
+
+.titleItem {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+@media all and (min-width: 768px) {
+  .navContainer {
+    flex-direction: row;
+    margin: 20px 20px 20px 30px;
+    justify-content: space-between;
+  }
+
+  .menuItem {
+    padding: 0 10px;
+  }
+  .titleItem {
+    font-size: 40px;
+  }
+}
